@@ -1,7 +1,7 @@
 ## Clone this project
 
 ```bash
-> git clone https://github.com/Gxcng/dejava.git
+> git clone https://github.com/Gxcng/javawhatsapp.git
 ```
 
 ## Install the dependencies:
@@ -9,12 +9,12 @@ Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
 ```bash
-> cd dejava
+> cd javawhatsapp
 > bash install.sh
 ```
 
 ### Usage
-> bash install.sh
+> bash
 > npm start
 ```
 
