@@ -1,7 +1,7 @@
 {
-  "name": "XBOT",
+  "name": "JBOT",
   "version": "1.0.0",
-  "description": "Xbot for whatsapp online with termux",
+  "description": "BOT Only linux",
   "main": "index.js",
   "directories": {
     "lib": "lib"
