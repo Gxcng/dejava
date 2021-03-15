@@ -55,7 +55,7 @@ exports.admin = () => {
 }
 
 exports.badmin = () => {
-	return`*「BOT HARUS JADI ADMIN」*`
+	return`*「BOT TIENE QUE SER ADM」*`
 }
 
 exports.nsfwoff = () => {
@@ -67,7 +67,7 @@ exports.bug = () => {
 }
 
 exports.wrongf = () => {
-	return`*format salah/text kosong*`
+	return`*Comando erroneo*`
 }
 
 exports.clears = () => {
@@ -135,30 +135,17 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}quotemaker* <text|author>
 ┣⊱ *${prefix}qrcode* <text>
 ┣⊱ *${prefix}ttp*
+┣⊱ *${prefix}tts*
 ┣⊱ *${prefix}stickerhide* <text>
 ┣⊱ *${prefix}emoji*
-┣━━⊱  *FUN MENU*  ⊰━━━┫
-┣⊱ *${prefix}lirik* <text>
-┣⊱ *${prefix}artinama*
-┣⊱ *${prefix}chord* <text>
-┣⊱ *${prefix}bisakah* <teks>
-┣⊱ *${prefix}kapankah* <teks>
-┣⊱ *${prefix}apakah* <teks>
-┣⊱ *${prefix}rate* <teks>
-┣⊱ *${prefix}slap*
-┣⊱ *${prefix}tampar*
-┣⊱ *${prefix}moddroid* <teks> *[VIP]*
-┣⊱ *${prefix}happymod* <teks> *[VIP]*
+┣⊱ *${prefix}toimg*
 ┣━━⊱ *MEDIA MENU* ⊰━━┫
-┣⊱ *${prefix}brainly* *[VIP]*
 ┣⊱ *${prefix}pinterest*
-┣⊱ *${prefix}resepmasakan* <teks>
-┣⊱ *${prefix}igstalk* <username>
+┣⊱ *${prefix}resepmasakan* <text>
 ┣⊱ *${prefix}ssweb* <link>
 ┣⊱ *${prefix}kbbi* <text>
 ┣⊱ *${prefix}joox* <judul> *[VIP]*
 ┣━━⊱ *GROUP MENU* ⊰━┫
-┣⊱ *${prefix}hidetag*
 ┣⊱ *${prefix}blocklist*
 ┣⊱ *${prefix}grouplist*
 ┣⊱ *${prefix}level*
@@ -167,33 +154,26 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}setpp*
 ┣⊱ *${prefix}add* <tag>
 ┣⊱ *${prefix}kick* <tag>
-┣⊱ *${prefix}setname* <teks>
-┣⊱ *${prefix}setdesc* <teks>
+┣⊱ *${prefix}setname* <text>
+┣⊱ *${prefix}setdesc* <text>
 ┣⊱ *${prefix}demote* <tag>
 ┣⊱ *${prefix}promote* <tag>
 ┣⊱ *${prefix}listadmin*
-┣⊱ *${prefix}group* [buka/tutup]
+┣⊱ *${prefix}group* [on/off]
 ┣⊱ *${prefix}leveling* [enable/disable]
-┣⊱ *${prefix}nsfw* [1/0]
-┣⊱ *${prefix}simih* [1/0]
-┣⊱ *${prefix}welcome* [1/0]
 ┣⊱ *${prefix}antilink* [1/0]
 ┣⊱ *${prefix}nobadword* [enable/disable]
 ┣━━⊱ *OWNER MENU* ⊰━┫
-┣⊱ *${prefix}bc* <teks>
-┣⊱ *${prefix}addbadword* <text>
-┣⊱ *${prefix}delbadword* <text>
-┣⊱ *${prefix}bcgc* <teks>
+┣⊱ *${prefix}bc* <text>
+┣⊱ *${prefix}bcgc* <text>
 ┣⊱ *${prefix}kickall* <rawan ban>
-┣⊱ *${prefix}setreply* <teks>
-┣⊱ *${prefix}setprefix* <symbol>
-┣⊱ *${prefix}clearall*
+┣⊱ *${prefix}setreply* <text>
 ┣⊱ *${prefix}block* <tag>
 ┣⊱ *${prefix}unblock* <tag>
 ┣⊱ *${prefix}leave*
-┣⊱ *${prefix}event* [1/0]
-┣⊱ *${prefix}clone* <tag>
-┣⊱ *${prefix}setppbot*
+┣━━⊱ *OWNER GROUP* ⊰━┫
+┣⊱https://chat.whatsapp.com/Du00elRSLIuIwhb68xljFY
+┣⊱wa.me/+18095832598
 ┗━━⊱  ⸨ 📍Java📍 ⸩  ⊰━━━━┛
 `
 }
@@ -201,8 +181,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, role) => {
 	return`
 *「  "🦄💨"  」*
-┏⊱ *Nama* : ${pushname}
-┣⊱ *Nomer* : wa.me/${sender.split("@")[0]}
+┏⊱ *Nombre* : ${pushname}
+┣⊱ *Numero* : wa.me/${sender.split("@")[0]}
 ┣⊱ *Xp* : ${getLevelingXp(sender)}
 ┣⊱ *Limit* : +3
 ┣⊱ *Role*: ${role}
